@@ -19,7 +19,7 @@ app.use('/lib', express.static(__dirname + "/public/scripts"));
 app.get('/', function(req, res) {
     res.render('index');
 }).get('/projects', function(req, res) {
-    res.render('projects');
+    res.render('projects', {"local" : {"title" : "Projects"}});
 }).get('/services', function(req, res) {
     res.render('services');
 }).get('/about', function(req, res) {

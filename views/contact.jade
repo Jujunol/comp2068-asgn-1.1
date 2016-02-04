@@ -1,0 +1,18 @@
+// - Filename: Pretty sure you can read it in the title bar
+// - Author's Name: John Horne
+// - Website Name: comp2068-asgn-1.1
+// - File Description: Contact me page
+
+extends partials/layout-general
+append content
+    h3 Send me an Email!
+    form(method="POST").form.col-sm-6
+        .form-group
+            input(type="text", placeholder="Your Name...").form-control
+        .form-group
+            input(type="text", placeholder="Your Email...").form-control
+        .form-group
+            textarea.form-control The contents of your message goes here
+        button.btn.btn-success Send
+    .clearfix
+    

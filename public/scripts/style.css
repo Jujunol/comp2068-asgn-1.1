@@ -32,3 +32,9 @@ html, body {
     width: 90%;
     max-width: 900px;
 }
+
+.clearfix {
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
