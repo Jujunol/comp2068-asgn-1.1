@@ -1,0 +1,34 @@
+/*
+// - Filename: Pretty sure you can read it in the title bar
+// - Author's Name: John Horne
+// - Website Name: comp2068-asgn-1.1
+// - File Description: General styling of the pages
+*/
+
+html, body {
+    height: 100%;
+}
+
+#header {
+    /*background: #FFF;*/
+    padding: 0 16px;
+    /* Odd things happen without this border.... */
+    /*border: 1px solid white;*/
+}
+
+#content-wrapper {
+    border-top: 1px solid black;
+    background-color: #CCC;
+    min-height: 100%;
+}
+
+#content {
+    background: #FFF;
+    border: 1px solid #666;
+    margin: 8px auto;
+    padding: 4px 16px;
+    text-align: justify;
+    line-height: 24px;
+    width: 90%;
+    max-width: 900px;
+}

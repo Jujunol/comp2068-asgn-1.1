@@ -1,0 +1,99 @@
+/*
+// - Filename: Pretty sure you can read it in the title bar
+// - Author's Name: John Horne
+// - Website Name: comp2068-asgn-1.1
+// - File Description: The styling for the navbar
+*/
+
+/* Nav Wrapper */
+#nav-wrapper {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/* Menu Items */
+.navbar-light {
+    background-color: #FFF;
+    border-width: 0 1px 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 0 0 15px 15px;
+    display: inline-block;
+    margin: 0 auto 24px;
+    padding: 0 10px;
+    box-shadow: inset 0px 8px 16px rgba(255, 255, 255, 0.3), inset 0px -8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-light ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* Make sure it doesn't go to next line */
+    white-space: nowrap;
+}
+
+.navbar-light > ul > li {
+    border-left: 1px solid #AAA;
+    display: inline-block;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #999;
+    font-size: medium;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.navbar-light li:hover {
+    /*color: #FF3333;*/
+    box-shadow: inset 0px -8px 16px rgba(255, 255, 255, 0.3), inset 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-light > ul > li:first-child {
+    border: 0 none;
+}
+
+.navbar-light a {
+    display: block;
+    color: inherit;
+    width: 100%;
+    text-decoration: none;
+}
+
+/* Sub-Menu */
+.navbar-light li ul {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    background: #DDD;
+    border: 1px solid black;
+    color: black;
+    min-width: 150px;
+    box-shadow: 8px 8px 4px #666;
+    /* Correction for padding */
+    margin-top: 8px;
+    margin-left: -16px;
+}
+
+.navbar-light li:hover ul {
+    display: block;
+}
+
+.navbar-light li li {
+    /* Transormations and shadows are inherited by default for some reason.. */
+    text-transform: capitalize;
+    text-shadow: none;
+    border-bottom: 1px solid #AAA;
+}
+
+.navbar-light li li a {
+    padding: 8px;
+}
+
+.navbar-light li li img {
+    margin-left: 4px;
+}
+
+.navbar-light li li:hover {
+    background: #FFF;
+    text-decoration: underline;
+}
