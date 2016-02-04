@@ -1,0 +1,24 @@
+doctype html
+html(lang='en-ca')
+head
+    block head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        
+        if local && local.title
+            title #{local.title} - John's Work Portfolio
+        else 
+            title John's Work Portfolio
+        
+        link(rel='stylesheet', href='/lib/bootstrap/dist/css/bootstrap.min.css')
+        link(rel='stylesheet', href='/lib/bootstrap/dist/css/bootstrap-theme.min.css')
+        // link(rel='stylesheet', href='/lib/font-awesome/css/font-awesome.min.css')
+        
+        link(rel='stylesheet', href='/lib/navbar.css')
+        link(rel='stylesheet', href='/lib/style.css')
+        
+        script(src='/lib/jquery/dist/jquery.js')
+        script(src='/lib/bootstrap/dist/js/bootstrap.min.js')
+
+body

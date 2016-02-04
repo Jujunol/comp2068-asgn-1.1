@@ -1,0 +1,22 @@
+{
+  "name": "comp2068-asgn-1.1",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Jujunol/comp2068-asgn-1.1",
+  "authors": [
+    "Jujunol <jujunol@outlook.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}
